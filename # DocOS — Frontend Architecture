@@ -1,0 +1,64 @@
+# DocOS — Frontend Architecture
+
+## 1. Stack
+
+Next.js
+TypeScript
+Tailwind
+shadcn/ui
+
+## 2. Structure
+
+/app
+/components
+/lib
+/store
+/hooks
+
+## 3. Pages
+
+/dashboard
+/config/[id]
+
+## 4. Core Components
+
+EditorPanel
+OutputPanel
+TestBar
+CompareView
+
+## 5. State
+
+Local state + Zustand
+
+## 6. Data Models
+
+Config:
+- id
+- content
+
+Run:
+- id
+- input
+- output
+
+## 7. API
+
+POST /run
+
+## 8. Hooks
+
+useRunTest
+useAutosave
+
+## 9. Dev Order
+
+1. editor
+2. test
+3. output
+4. compare
+
+## 10. Rule
+
+UI should disappear.
+Loop must remain.
